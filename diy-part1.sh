@@ -10,6 +10,15 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
+
+#add passwall
+git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-passwall
+
+
+#add luci-app-adguardhome
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/luci-app-adguardhome
+
+
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
